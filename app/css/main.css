@@ -295,11 +295,12 @@ h1 {
 
 .main-header-top {
   width: 100%;
-  position: relative; }
+  position: relative;
+  height: 100vh; }
 
 .btn-burger {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 20px;
   right: 15px;
   width: 20px;
@@ -315,6 +316,7 @@ h1 {
 
 .main-header-slider {
   width: 100%;
+  height: 100%;
   color: #fff;
   position: relative;
   font-family: "Gilroy", sans-serif; }
@@ -326,7 +328,16 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 112px 40px 30px; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 112px 40px 30px;
+    height: 100%; }
+
+.btn-scroll {
+  margin: auto auto 0; }
 
 .bg-violet {
   background: #775DAA; }
@@ -354,7 +365,8 @@ h1 {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  display: none; }
 
 .main-menu {
   width: 100%;
@@ -400,7 +412,10 @@ h1 {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  position: relative;
+  padding: 0 0 100px;
+  margin: auto auto 0; }
 
 .logo-slider__svg {
   max-width: 490px;
@@ -408,9 +423,14 @@ h1 {
   margin: 0 auto; }
 
 .logo-slider__img {
-  margin: -90px auto 0;
   max-width: 350px;
-  width: 100%; }
+  width: 100%;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0); }
 
 .slick-slide {
   outline: none; }
@@ -419,7 +439,7 @@ h1 {
   font-family: "Gilroy", sans-serif; }
 
 .main-top-navigation {
-  padding: 10px 0 60px; }
+  padding: 10px 0; }
   .main-top-navigation .logo {
     width: 100px; }
   .main-top-navigation .main-container {
@@ -438,8 +458,16 @@ h1 {
       .main-top-navigation .main-menu li a:after {
         background: #282828; }
 
+.main-top-navigation.fixed {
+  position: fixed;
+  z-index: 7;
+  width: 100%;
+  background: #fff;
+  left: 0;
+  top: 0; }
+
 .main-about {
-  padding: 0 0 65px; }
+  padding: 50px 0 65px; }
   .main-about .main-container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -943,17 +971,17 @@ h2 {
 
 @media only screen and (max-width: 480px) {
   .main-header-slider .main-container {
-    padding: 208px 40px 30px; }
+    padding: 30px 40px; }
   .logo-slider__svg {
     max-width: 238px; }
   .logo-slider__img {
-    margin: -45px auto 0;
     max-width: 170px; }
   .main-menu {
     display: none;
     margin: 0; }
   .logo-slider {
-    margin: 0 auto 150px; }
+    margin: 0 auto 150px;
+    padding: 0 0 45px; }
   .btn-burger {
     display: -webkit-box;
     display: -ms-flexbox;
