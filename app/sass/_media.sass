@@ -33,6 +33,20 @@
     .main-footer-menu li
       margin-right: 0
 
+
+
+@media only screen and (max-width : 1050px)
+  .main-about__img, .main-about__box
+    max-width: 400px
+
+  .main-command-box
+    padding: 0 0 0 109px
+    width: 310px
+
+  .main-command-box__photo
+    width: 99px
+    height: 99px
+
 @media only screen and (max-width : 992px)
   .main-footer-menu
     column-count: 1
@@ -42,12 +56,38 @@
   .main-copyright
     max-width: 350px
 
+@media only screen and (max-width : 960px)
+  .main-command-box
+    width: 250px
+    padding: 0
+    justify-content: space-between
+    align-items: center
+
+  .main-command-box__photo
+    position: relative
+
+  .main-command-box__content
+    width: calc(100% - 109px)
+
+  .main-command-box__text
+    margin: 11px 0 0
+
+  .name-user
+    font-size: 14px
+
+  .position-user
+    font-size: 10px
+    margin: 11px 0 0
+
 @media only screen and (max-width : 840px)
   h1
     font-size: 30px
 
   .description-title
     font-size: 24px
+
+  .main-about__img, .main-about__box
+    max-width: 300px
 
 
 /* Small Devices, Tablets */
@@ -92,6 +132,24 @@
 
   .main-logo
     max-width: 120px
+
+  .main-about__box
+    max-width: none
+    width: 100%
+    margin: 0 0 50px
+
+
+  .main-about__box-one
+    margin: 0 0 68px
+
+  .main-about__img
+    order: -1
+    max-width: 246px
+    margin: 0 -37px -69px auto
+    .img-desktop
+      display: none
+    .img-mobile
+      display: block
 
 @media only screen and (max-width : 580px)
   .main-header-img
@@ -164,37 +222,89 @@
     &:last-child
       margin: 0
 
+  .line-wrapper
+    flex-wrap: wrap
 
+  .main-command-slider__nav
+    margin: 11px 0 0
 
-/* Custom, iPhone Retina */
+  .main-command-box
+    margin: 0 30px 0 0
+
+  .slick-dots
+    width: 100%
+
+  .main-command
+    .line-wrapper
+      padding: 0 15px
+    .main-container
+      padding: 0
+
+  .main-command-slider
+    padding: 0 15px
+
+  .main-container
+    padding: 0 15px
+
+@media only screen and (max-width : 480px)
+  .main-header-slider
+    .main-container
+      padding: 208px 40px 30px
+
+  .logo-slider__svg
+    max-width: 238px
+
+  .logo-slider__img
+    margin: -45px auto 0
+    max-width: 170px
+
+  .main-menu
+    display: none
+    margin: 0
+
+  .logo-slider
+    margin: 0 auto 150px
+
+  .btn-burger
+    display: flex
+
+  .main-top-navigation
+    padding: 10px 0 5px
+    .btn-burger
+      position: relative
+      top: 0
+      right: 0
+      svg
+        path
+          fill: #775DAA
+
+  .main-about__box
+    .text
+      max-width: 254px
+
+  .main-about
+    padding: 0
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: 38px
+      left: -39px
+      background: #F9F1F5
+      width: 74px
+      height: 74px
+      border-radius: 50%
+    &:after
+      content: ''
+      bottom: 28px
+      left: -30px
+      position: absolute
+      background: #F9F1F5
+      width: 174px
+      height: 174px
+      border-radius: 50%
+
 @media only screen and (max-width : 330px)
   h1
     font-size: 24px
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
 
