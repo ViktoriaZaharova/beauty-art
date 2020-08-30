@@ -1149,10 +1149,9 @@ h2 {
     font-size: 16px; }
   .users-service-slider .name-user {
     font-size: 22px; }
-
-.main-command-box__photo {
-  width: 180px;
-  height: 180px; }
+  .users-service-slider .main-command-box__photo {
+    width: 180px;
+    height: 180px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
