@@ -33,7 +33,38 @@
     .main-footer-menu li
       margin-right: 0
 
+  .advantages-number__box
+    font-size: 18px
+    margin: 0 30px 0 0
+    .number
+      font-size: 50px
+    p
+      max-width: 200px
 
+  .block-appeal
+    width: 400px
+
+  .table-connect h3, .table-connect, .price-connect p
+    font-size: 16px
+
+  .thead, .table-connect .td:first-child
+    font-size: 18px
+
+  .table-connect .th:first-child, .table-connect .td:first-child
+    padding: 15px
+
+  .icon-property
+    width: 20px
+    height: 20px
+
+  .price-connect p
+    font-weight: 600
+
+  .users-service-slider
+    padding: 0 0 0 15px
+
+  .users-service-slider .main-command-box
+    width: 700px
 
 @media only screen and (max-width : 1050px)
   .main-about__img, .main-about__box
@@ -47,6 +78,9 @@
     width: 99px
     height: 99px
 
+  .users-service-slider .main-command-box
+    padding: 0 0 0 109px
+
 @media only screen and (max-width : 992px)
   .main-footer-menu
     column-count: 1
@@ -55,6 +89,15 @@
 
   .main-copyright
     max-width: 350px
+
+  .main-market-img
+    width: 457px
+
+  .main-market
+    padding: 30px 0 50px
+    h1
+      font-size: 45px
+      margin: 45px 0 30px
 
 @media only screen and (max-width : 960px)
   .main-command-box
@@ -79,7 +122,36 @@
     font-size: 10px
     margin: 11px 0 0
 
-@media only screen and (max-width : 840px)
+  .block-appeal
+    width: 320px
+    font-size: 18px
+    padding: 30px 15px
+    p
+      max-width: none
+    .btn
+      max-width: 232px
+
+  .btn-violet
+    height: 50px
+    font-size: 18px
+
+  .advantages-number
+    padding: 20px 0 30px
+
+  .main-help__content
+    max-width: 450px
+
+  .users-service-slider .main-command-box
+    padding: 0
+
+  .users-service-slider .main-command-box
+    width: 500px
+
+  .users-service
+    .main-command-slider__nav
+      margin: 0
+
+@media only screen and (max-width : 845px)
   h1
     font-size: 30px
 
@@ -89,6 +161,71 @@
   .main-about__img, .main-about__box
     max-width: 300px
 
+  .advantages-number__box
+    width: 100%
+    margin: 0 0 40px
+    text-align: center
+    p
+      max-width: 290px
+      margin: 0 auto
+    &:last-child
+      margin: 0 0 30px
+
+  .advantages-number
+    flex-direction: column
+    align-items: center
+
+  .block-appeal
+    width: 100%
+    position: relative
+    top: 0
+    right: 0
+    text-align: center
+    p
+      margin: 0 auto 15px
+    .btn
+      margin: 0 auto
+
+  .main-page h2
+    font-size: 28px
+    margin: 0 0 24px
+
+  .stages-work__box
+    max-width: none
+    width: 100%
+    text-align: center
+    margin: 0 0 50px
+    h3
+      margin: 10px 0
+      font-size: 22px
+
+  .stages-work__icon
+    justify-content: center
+
+  .stages-work
+    .btn
+      height: 60px
+      max-width: 232px
+      margin: 0 auto
+      font-size: 18px
+
+  .main-help
+    padding: 60px 0 40px
+    h2
+      margin: 0 auto 20px
+      text-align: center
+
+  .main-help__content
+    max-width: none
+
+  .main-page
+    .description-title
+      text-align: center
+
+  .main-help .block-appeal p
+    max-width: none
+    br
+      display: none
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -112,8 +249,21 @@
       height: 46px
       bottom: -22px
 
+  .table-connect .btn
+    height: 33px
+    max-width: 120px
+    font-size: 12px
+    &:before
+      bottom: -3px
 
+  .table-connect .th:first-child, .table-connect .td:first-child
+    width: 25%
 
+  .table-connect .th, .table-connect .td, .table-connect .td:last-child, .table-connect .th:last-child
+    width: 25%
+
+  .users-service-slider .main-command-box
+    width: 400px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 660px)
@@ -150,6 +300,13 @@
       display: none
     .img-mobile
       display: block
+
+  .main-market-img
+    width: 482px
+    right: auto
+    left: 50%
+    transform: translate(-50%,0)
+    opacity: .2
 
 @media only screen and (max-width : 580px)
   .main-header-img
@@ -245,6 +402,100 @@
 
   .main-container
     padding: 0 15px
+
+  .main-market
+    padding: 40px 0 90px
+    h1
+      text-align: center
+      font-size: 28px
+      line-height: 34px
+      margin: 46px auto 30px
+    .logo
+      width: 150px
+      margin: 0 auto
+    .btn
+      margin: 0 auto
+      max-width: 232px
+
+  .btn-accent
+    height: 50px
+    font-size: 18px
+    &:before
+      bottom: -5px
+
+  .thead, .table-connect .td:first-child
+    font-size: 12px
+    font-weight: 600
+
+  .table-connect .btn
+    margin: 10px 0
+
+  .price-connect .btn-accent:before
+    box-shadow: 0px 10px 20px #F4E9EA
+
+  .description-connect
+    font-size: 11px
+    line-height: 13px
+    h3
+      margin: 0 0 10px
+      font-size: 12px
+
+  .table-connect h3, .table-connect, .price-connect p
+    font-size: 12px
+
+  .table-connect
+    width: 600px
+
+  .table-connect .th:first-child, .table-connect .td:first-child
+    width: 130px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      right: 0
+      top: 0
+      width: 10px
+      height: 100%
+      background: linear-gradient(90deg, #F9E1E1 0%, rgba(249, 225, 225, 0) 90%)
+      display: block
+      transform: translate(0)
+
+  .table-connect .th:before, .table-connect .td:before
+    left: auto
+    right: 0
+
+  .table-connect .td:last-child, .table-connect .th:last-child
+    &:before
+      display: none
+
+  .tr
+    padding: 0
+
+  .thead
+    box-shadow: none
+
+  .users-service
+    h2
+      text-align: center
+
+  .users-service-slider:before
+    display: none
+
+  .users-service-slider .name-user
+    font-size: 14px
+
+  .users-service-slider .position-user
+    font-size: 10px
+    max-width: 138px
+
+  .users-service-slider .main-command-box__text
+    font-size: 12px
+    height: 127px
+    overflow: hidden
+
+  .users-service-slider .main-command-box
+    margin: 0 32px 0 0
+    width: 248px
 
 @media only screen and (max-width : 480px)
   .main-header-slider
