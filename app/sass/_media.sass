@@ -308,6 +308,14 @@
     transform: translate(-50%,0)
     opacity: .2
 
+  .sidebar
+    width: 250px
+    padding: 30px 25px
+
+  .section-content__content
+    width: calc(100% - 250px)
+    padding: 40px 30px
+
 @media only screen and (max-width : 580px)
   .main-header-img
     display: none
@@ -502,8 +510,6 @@
     .main-container
       padding: 30px 40px
 
-
-
   .logo-slider__svg
     max-width: 238px
 
@@ -556,6 +562,28 @@
       width: 174px
       height: 174px
       border-radius: 50%
+
+  .sidebar
+    width: 100%
+    background: transparent
+    height: auto
+    padding: 22px 20px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .sidebar-menu
+      display: none
+    .logo
+      max-width: 100px
+      margin: 0
+
+  .btn-mobile-sidebar
+    display: flex
+
+  .section-content__content
+    width: 100%
+    padding: 30px 20px
+    height: auto
 
 @media only screen and (max-width : 330px)
   h1

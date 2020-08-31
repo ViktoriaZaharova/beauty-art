@@ -127,3 +127,13 @@ $('.btn-close').click(function () {
     $('.mobile-menu').fadeOut();
     $('.overlay').fadeOut();
 });
+
+$('.dropDownItem').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('active').siblings('.dropDownMenu').slideToggle();
+});
+
+$('.btn-mobile-sidebar').click(function () {
+    $(this).toggleClass('active');
+    $('.mobile-sidebar-menu').fadeToggle();
+});

@@ -26,6 +26,20 @@
   src: url("../fonts/Gilroy/Gilroy-Thin.eot");
   src: url("../fonts/Gilroy/Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Thin.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "AvenirNext";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/AvenirNext/AvenirNextCyr-Demi.eot");
+  src: url("../fonts/AvenirNext/AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/AvenirNextCyr-Demi.woff") format("woff"), url("../fonts/AvenirNext/AvenirNextCyr-Demi.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "AvenirNext";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/AvenirNext/AvenirNextCyr-Medium.eot");
+  src: url("../fonts/AvenirNext/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/AvenirNextCyr-Medium.woff") format("woff"), url("../fonts/AvenirNext/AvenirNextCyr-Medium.ttf") format("truetype"); }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -93,7 +107,8 @@ body {
   color: #2D2D2D; }
 
 html, body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 100%; }
 
 img {
   display: block;
@@ -1153,6 +1168,153 @@ h2 {
     width: 180px;
     height: 180px; }
 
+.section-content {
+  height: 100%;
+  font-family: "AvenirNext", sans-serif; }
+  .section-content .row, .section-content .container-fluid {
+    height: 100%; }
+
+.section-content__wrapper {
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.sidebar {
+  height: 100%;
+  background: #FAFAFA;
+  padding: 40px 38px 40px 50px;
+  width: 303px;
+  overflow-y: auto; }
+  .sidebar .logo {
+    margin: 0 0 35px;
+    max-width: 139px; }
+
+.section-content__content {
+  width: calc(100% - 303px);
+  padding: 106px 68px;
+  overflow-y: auto; }
+
+.dropDownMenu {
+  margin: 15px 0 4px;
+  padding: 0 0 0 20px;
+  display: none; }
+
+.sidebar-submenu__links {
+  color: #2D2D2D;
+  font-size: 14px;
+  font-weight: 500; }
+  .sidebar-submenu__links:hover {
+    color: #000; }
+
+.sidebar-submenu__item {
+  margin: 0 0 14px; }
+
+.dropDownItem {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .dropDownItem:after {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 5px;
+    background: url("../img/arrow-top.svg") no-repeat center;
+      background-size: contain;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+
+.dropDownItem.active:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.sidebar-menu {
+  width: 100%; }
+
+.sidebar-menu__item {
+  margin: 0 0 14px; }
+
+.sidebar-menu__links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #775DAA;
+  font-size: 14px;
+  font-weight: 600; }
+  .sidebar-menu__links:hover {
+    color: #2D2D2D; }
+
+.mobile-sidebar-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #FAFAFA;
+  z-index: 5;
+  width: 251px;
+  padding: 32px 20px;
+  height: 100%;
+  overflow-y: auto; }
+
+.btn-mobile-sidebar {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(119, 93, 170, 0.2);
+    border-radius: 50%;
+  padding: 9px 8px;
+  cursor: pointer; }
+  .btn-mobile-sidebar span {
+    width: 100%;
+    height: 2px;
+    background: #775DAA;
+    border-radius: 10px;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+
+.btn-mobile-sidebar.active span:nth-child(2) {
+  width: 0; }
+
+.btn-mobile-sidebar.active span:first-child {
+  margin: 4.5px 0 0 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.btn-mobile-sidebar.active span:last-child {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin: 0 0 4.5px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1700px) {
@@ -1406,7 +1568,13 @@ h2 {
     left: 50%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    opacity: .2; } }
+    opacity: .2; }
+  .sidebar {
+    width: 250px;
+    padding: 30px 25px; }
+  .section-content__content {
+    width: calc(100% - 250px);
+    padding: 40px 30px; } }
 
 @media only screen and (max-width: 580px) {
   .main-header-img {
@@ -1620,7 +1788,34 @@ h2 {
       background: #F9F1F5;
       width: 174px;
       height: 174px;
-      border-radius: 50%; } }
+      border-radius: 50%; }
+  .sidebar {
+    width: 100%;
+    background: transparent;
+    height: auto;
+    padding: 22px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .sidebar .sidebar-menu {
+      display: none; }
+    .sidebar .logo {
+      max-width: 100px;
+      margin: 0; }
+  .btn-mobile-sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .section-content__content {
+    width: 100%;
+    padding: 30px 20px;
+    height: auto; } }
 
 @media only screen and (max-width: 330px) {
   h1 {
