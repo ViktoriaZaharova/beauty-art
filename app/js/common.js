@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('.main-header-slider .main-header-slider__bg').eq(0).addClass('active').fadeIn(1000);
     $('.logo-slider .logo-slider__img').eq(0).addClass('active').fadeIn(1000);
 
@@ -8,8 +8,8 @@ $(document).ready(function() {
 
 function blockAnimate() {
     var length = $('.main-header-slider .main-header-slider__bg').length - 1;
-    $('.main-header-slider .main-header-slider__bg').each(function(index) {
-        if($(this).hasClass('active') && index !== length) {
+    $('.main-header-slider .main-header-slider__bg').each(function (index) {
+        if ($(this).hasClass('active') && index !== length) {
             $(this).removeClass('active').fadeOut(1000).next('.main-header-slider__bg').addClass('active').fadeIn(1000);
             return false;
         } else if (index === length) {
@@ -20,8 +20,8 @@ function blockAnimate() {
     });
 
     var length2 = $('.logo-slider .logo-slider__img').length - 1;
-    $('.logo-slider .logo-slider__img').each(function(index) {
-        if($(this).hasClass('active') && index !== length2) {
+    $('.logo-slider .logo-slider__img').each(function (index) {
+        if ($(this).hasClass('active') && index !== length2) {
             $(this).removeClass('active').fadeOut(1000).next('.logo-slider__img').addClass('active').fadeIn(1000);
             return false;
         } else if (index === length2) {
@@ -128,9 +128,17 @@ $('.btn-close').click(function () {
     $('.overlay').fadeOut();
 });
 
-$('.dropDownItem').click(function (e) {
-    e.preventDefault();
-    $(this).toggleClass('active').siblings('.dropDownMenu').slideToggle();
+
+// menu dropdown
+$(function () {
+    $("ul.sidebar-menu>li").has("ul").children('a').addClass('dropDownItem');
+
+    $('ul.sidebar-menu>li>a').on('click', function (e) {
+        if ($(this).parent().find('ul').length > 0) {
+            e.preventDefault();
+            $(this).toggleClass('active').siblings('.dropDownMenu').slideToggle();
+        }
+    });
 });
 
 $('.btn-mobile-sidebar').click(function () {

@@ -314,7 +314,6 @@
 
   .section-content__content
     width: calc(100% - 250px)
-    padding: 40px 30px
 
 @media only screen and (max-width : 580px)
   .main-header-img
@@ -564,13 +563,17 @@
       border-radius: 50%
 
   .sidebar
-    width: 100%
-    background: transparent
+    background: #fff
     height: auto
     padding: 22px 20px
     display: flex
     align-items: center
     justify-content: space-between
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    z-index: 3
     .sidebar-menu
       display: none
     .logo
@@ -582,8 +585,8 @@
 
   .section-content__content
     width: 100%
-    padding: 30px 20px
     height: auto
+    padding: 100px 20px 20px
 
 @media only screen and (max-width : 330px)
   h1
